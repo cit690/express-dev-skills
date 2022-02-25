@@ -6,14 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Express Dev Skills</title>
   <body>
-    <h1>Skills</h1>
+    <h1>Skills needed to get a girlfriend</h1>
     <% if(error) { %>
       <h2><%= error %></h2>
     <% } %>
     <ul>
       <% skills.forEach(function(skill) { %>
         <li>
-          <%= skill.text %>
+          <a href="/skills/<%= skill._id %>"><%= skill.text %></a>
             - 
           <%= skill.done ? 'done' : 'not done' %>
         </li>
